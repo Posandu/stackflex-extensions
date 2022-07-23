@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "StackFlex",
+	"version": "1.0",
+	"description": "Save your code from websites, use it from VSCode",
+	"icons": {
+		"48": "logo.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["index.js"]
+		}
+	]
+}

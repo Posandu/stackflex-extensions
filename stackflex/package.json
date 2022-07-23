@@ -1,0 +1,58 @@
+{
+	"name": "stackflex",
+	"displayName": "StackFlex",
+	"description": "Save-code from the browser, use it in VSCode",
+	"version": "1.0.1",
+	"publisher": "Posandu",
+	"preview": true,
+	"homepage": "https://stackflex.tronic247.com",
+	"engines": {
+		"vscode": "^1.69.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "stackflex.openMenu",
+				"title": "Search StackFlex"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "stackflex.openMenu",
+				"key": "ctrl+alt+s",
+				"mac": "cmd+alt+s"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"when": "true",
+					"command": "stackflex.openMenu",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"icon": "logo.png",
+	"main": "./extension.js",
+	"devDependencies": {
+		"eslint": "^8.18.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.69.0",
+		"node-fetch": "2.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/posandu/stackflex"
+	}
+}
